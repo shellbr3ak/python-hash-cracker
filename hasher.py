@@ -53,7 +53,7 @@ try:
     hpass = open(hashfile).read().strip()
     passwords = open(wordlist, encoding="latin1").read().splitlines()
     
-    print(f"\nCracking Tha Hash {hpass}")
+    print(f"\nCracking Tha Hash " + YELLOW + f"{hpass}" + RESET)
     time.sleep(2)
     for password in passwords:
         #time.sleep(.2)

@@ -56,8 +56,8 @@ try:
     print(f"\nCracking Tha Hash {hpass}")
     time.sleep(2)
     for password in passwords:
-        time.sleep(.2)
-        print(YELLOW + "[+]" + RESET + f" Trying password : {password}")
+        #time.sleep(.2)
+        #print(YELLOW + "[+]" + RESET + f" Trying password : {password}")
         if hpass == get_hash(password,algo):
             print(GREEN + f"Hash Cracked : {password}" + RESET)
             break
